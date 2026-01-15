@@ -1,0 +1,11 @@
+@font-face {
+    font-family: GreatVibes;
+    font-weight: 400;
+    src: url("../public/fonts/GreatVibes-Regular.ttf");
+}
+
+@font-face {
+    font-family: SourceCodePro;
+    font-weight: 400;
+    src: url("../public/fonts/SourceCodePro-Regular.ttf");
+}

@@ -1,0 +1,19 @@
+@import url("fonts.css");
+@import "tailwindcss";
+
+@theme {
+    --font-greatvibes: "GreatVibes", sans-serif;
+    --font-sourcecodepro: "SourceCodePro", sans-serif;
+}
+
+body {
+    font-family: GreatVibes;
+}
+
+.container {
+    max-width: 620px;
+    width: 100%;
+    margin: 0 auto;
+    background: white;
+    min-height: 100vh;
+}

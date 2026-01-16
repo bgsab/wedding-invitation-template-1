@@ -18,9 +18,9 @@ const Intro = async ({ names, date }: IProps) => {
                         <div className="text-[#2b1105] text-4xl absolute top-[55%] left-[50%] translate-y-[-50%] translate-x-[-50%]">{`${names[0][0]}&${names[1][0]}`}</div>
                     </div>
                     <ul className="px-20 flex flex-row justify-between items-center">
-                        <li className="text-[#2b1105] text-2xl">EN</li>
+                        <li className="text-[#2b1105] text-2xl font-Times">EN</li>
                         <span className="block w-[1px] h-[50px] bg-[#2b1105]"></span>
-                        <li className="text-[#2b1105] text-2xl">RU</li>
+                        <li className="text-[#2b1105] text-2xl font-Times">RU</li>
                     </ul>
                 </nav>
             </header>

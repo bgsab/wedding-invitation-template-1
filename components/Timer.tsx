@@ -52,27 +52,27 @@ const Timer = ({ eventDate, month, dayOfWeek }: IProps) => {
     return (
         <>
             <div className="py-20 relative overflow-hidden">
-                <h2 className="text-[#c6754d] font-Times text-2xl text-center pb-15">Time left until the event</h2>
+                <h2 className="text-[#c6754d] font-mono text-3xl text-center pb-15">Time left until the event</h2>
                 <div className="flex flex-row gap-15 justify-center">
                     <div className="flex flex-col items-center text-3xl gap-2">
-                        <p className="text-4xl font-Times text-[#2b1105]">{timeLeft == false ? "00" : timeLeft.days >= 10 ? timeLeft.days : `0${timeLeft.days}`}</p>
+                        <p className="text-4xl font-mono text-[#2b1105]">{timeLeft == false ? "00" : timeLeft.days >= 10 ? timeLeft.days : `0${timeLeft.days}`}</p>
                         <div className="w-full h-[1px] border-b border-b-[#2b1105] border-dotted"></div>
-                        <span className="text-[1.2rem] capitalize">days</span>
+                        <span className="text-[1.2rem] capitalize font-mono">days</span>
                     </div>
                     <div className="flex flex-col items-center text-3xl gap-2">
-                        <p className="text-4xl font-Times text-[#2b1105]">{timeLeft == false ? "00" : timeLeft.hours >= 10 ? timeLeft.hours : `0${timeLeft.hours}`}</p>
+                        <p className="text-4xl font-mono text-[#2b1105]">{timeLeft == false ? "00" : timeLeft.hours >= 10 ? timeLeft.hours : `0${timeLeft.hours}`}</p>
                         <div className="w-full h-[1px] border-b border-b-[#2b1105] border-dotted"></div>
-                        <span className="text-[1.2rem] capitalize">hours</span>
+                        <span className="text-[1.2rem] capitalize font-mono">hours</span>
                     </div>
                     <div className="flex flex-col items-center text-3xl gap-2">
-                        <p className="text-4xl font-Times text-[#2b1105]">{timeLeft == false ? "00" : timeLeft.minutes >= 10 ? timeLeft.minutes : `0${timeLeft.minutes}`}</p>
+                        <p className="text-4xl font-mono text-[#2b1105]">{timeLeft == false ? "00" : timeLeft.minutes >= 10 ? timeLeft.minutes : `0${timeLeft.minutes}`}</p>
                         <div className="w-full h-[1px] border-b border-b-[#2b1105] border-dotted"></div>
-                        <span className="text-[1.2rem] capitalize">min</span>
+                        <span className="text-[1.2rem] capitalize font-mono">min</span>
                     </div>
                     <div className="flex flex-col items-center text-3xl gap-2">
-                        <p className="text-4xl font-Times text-[#2b1105]">{timeLeft == false ? "00" : timeLeft.seconds >= 10 ? timeLeft.seconds : `0${timeLeft.seconds}`}</p>
+                        <p className="text-4xl font-mono text-[#2b1105]">{timeLeft == false ? "00" : timeLeft.seconds >= 10 ? timeLeft.seconds : `0${timeLeft.seconds}`}</p>
                         <div className="w-full h-[1px] border-b border-b-[#2b1105] border-dotted"></div>
-                        <span className="text-[1.2rem] capitalize">sec</span>
+                        <span className="text-[1.2rem] capitalize font-mono">sec</span>
                     </div>
                 </div>
                 <Image src={Flower} alt="" className="w-[50px] rotate-12 absolute bottom-0 -left-[10px]" />

@@ -1,6 +1,8 @@
 "use client"
 import { useEffect, useState } from "react";
 import Flower from "../public/images/flower4.png"
+import Flower2 from "../public/images/flower2.png"
+import Flower3 from "../public/images/flowerInbottle.png"
 import Image from "next/image";
 
 interface IProps {
@@ -75,8 +77,8 @@ const Timer = ({ eventDate, month, dayOfWeek }: IProps) => {
                         <span className="text-[1.2rem] capitalize font-mono">sec</span>
                     </div>
                 </div>
-                <Image src={Flower} alt="" className="w-[50px] rotate-12 absolute bottom-0 -left-[10px]" />
-                <Image src={Flower} alt="" className="w-[50px] -rotate-20 absolute bottom-1/2 -right-[10px]" />
+                <Image src={Flower} alt="" className="w-[50px] rotate-12 absolute bottom-0 -left-[10px] drop-shadow-[4px_4px_8px_rgba(0,0,0,0.5)]" />
+                <Image src={Flower2} alt="" className="w-[50px] -rotate-30 absolute bottom-1/2 -right-[10px] drop-shadow-[4px_4px_8px_rgba(0,0,0,0.5)]" />
                 <div className="pt-15 flex flex-col gap-10 items-stretch px-[20px]">
                     <div className="self-start">
                         {dayOfWeek.split("").map((letter, i) => (
@@ -84,7 +86,10 @@ const Timer = ({ eventDate, month, dayOfWeek }: IProps) => {
 
                         ))}
                     </div>
-                    <div className="self-center text-[3rem] uppercase font-mono text-[#2b1105]">{eventDay}</div>
+                    <div className="self-center flex flex-row">
+                        <Image src={Flower3} alt="" className="w-[100px] drop-shadow-[4px_4px_8px_rgba(0,0,0,0.5)]" />
+                        <div className="text-[3rem] self-end uppercase font-mono leading-[39px] text-[#2b1105]">{eventDay}</div>
+                    </div>
                     <div className="self-end">
                         {month.split("").map((letter, i) => (
                             <div key={i} className="flex flex-row font-mono text-[#2b1105] text-[2.15rem] tracking-widest capitalize before:content-[''] before:w-[1px] before:mx-[20px] text-center before:min-h-full before:block before:bg-[#c6754d] after:content-[''] after:w-[1px] after:mx-[20px] after:min-h-full after:block after:bg-[#c6754d]">{letter}</div>

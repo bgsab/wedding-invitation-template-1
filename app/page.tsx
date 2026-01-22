@@ -4,7 +4,12 @@ import Intro from "@/components/Intro";
 import Letter from "@/components/Letter";
 import Location from "@/components/Location";
 import Timer from "@/components/Timer";
+import { Metadata } from "next";
 
+export const metadata: Metadata = {
+    title: "Caleb And Amaya",
+    description: "Caleb And Amaya Wedding invitation",
+};
 
 const Home = async () => {
     const names = ["Caleb", "Amaya"]

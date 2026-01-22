@@ -53,7 +53,7 @@ const Timer = ({ eventDate, month, dayOfWeek }: IProps) => {
     const eventDay = eventDate.split("-")[2].split("T")[0]
     return (
         <>
-            <div className="py-20 relative overflow-hidden">
+            <div className="py-30 relative overflow-hidden">
                 <h2 className="text-[#c6754d] font-mono text-3xl text-center pb-15">Time left until the event</h2>
                 <div className="flex flex-row gap-15 justify-center">
                     <div className="flex flex-col items-center text-3xl gap-2">
@@ -79,7 +79,7 @@ const Timer = ({ eventDate, month, dayOfWeek }: IProps) => {
                 </div>
                 <Image src={Flower} alt="" className="w-[50px] rotate-12 absolute bottom-0 -left-[10px] drop-shadow-[4px_4px_8px_rgba(0,0,0,0.5)]" />
                 <Image src={Flower2} alt="" className="w-[50px] -rotate-30 absolute bottom-1/2 -right-[10px] drop-shadow-[4px_4px_8px_rgba(0,0,0,0.5)]" />
-                <div className="pt-15 flex flex-col gap-10 items-stretch px-[20px]">
+                <div className="pt-25 flex flex-col gap-10 items-stretch px-[20px]">
                     <div className="self-start">
                         {dayOfWeek.split("").map((letter, i) => (
                             <div key={i} className="self-center flex flex-row font-mono text-[#2b1105] text-[2.15rem] tracking-widest capitalize before:content-[''] before:w-[1px] before:mx-[20px] text-center before:min-h-full before:block before:bg-[#c6754d] after:content-[''] after:w-[1px] after:mx-[20px] after:min-h-full after:block after:bg-[#c6754d]">{letter}</div>
@@ -95,7 +95,6 @@ const Timer = ({ eventDate, month, dayOfWeek }: IProps) => {
                             <div key={i} className="flex flex-row font-mono text-[#2b1105] text-[2.15rem] tracking-widest capitalize before:content-[''] before:w-[1px] before:mx-[20px] text-center before:min-h-full before:block before:bg-[#c6754d] after:content-[''] after:w-[1px] after:mx-[20px] after:min-h-full after:block after:bg-[#c6754d]">{letter}</div>
                         ))}
                     </div>
-
                 </div>
             </div>
         </>

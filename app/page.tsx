@@ -17,7 +17,7 @@ const Home = async () => {
         <>
             <Header names={names} />
             <Intro names={names} date={date} />
-            <main className="pt-13 pb-20">
+            <main className="pt-13 pb-13">
                 <Letter names={names} date={date} />
                 <Timer eventDate={eventDate} month={month} dayOfWeek={dayOfWeek} />
                 <Location link={LocationLink} />

@@ -3,15 +3,3 @@
     font-weight: 400;
     src: url("../public/fonts/GreatVibes-Regular.ttf");
 }
-
-@font-face {
-    font-family: MarkScript;
-    font-weight: 400;
-    src: url("../public/fonts/MarckScript-Regular.ttf");
-}
-
-@font-face {
-    font-family: SourceCodePro;
-    font-weight: 400;
-    src: url("../public/fonts/SourceCodePro-Regular.ttf");
-}

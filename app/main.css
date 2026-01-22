@@ -4,7 +4,6 @@
 @theme {
     --font-Times: "Times New Roman", sans-serif;
     --font-greatvibes: "GreatVibes", sans-serif;
-    --font-sourcecodepro: "SourceCodePro", sans-serif;
 }
 
 body {
@@ -18,4 +17,3 @@ body {
     background: white;
     min-height: 100vh;
 }
-

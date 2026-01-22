@@ -8,7 +8,8 @@ import Image from "next/image";
 interface IProps {
     eventDate: string,
     month: string,
-    dayOfWeek: string
+    dayOfWeek: string,
+    language: string
 }
 
 interface ITimeLeft {
@@ -19,7 +20,36 @@ interface ITimeLeft {
 
 }
 
-const Timer = ({ eventDate, month, dayOfWeek }: IProps) => {
+const timeLeftHeading: { [key: string]: string } = {
+    ru: "Осталось времени до мероприятия",
+    en: "Time left until the event",
+    uz: "Tadbirga qadar qolgan vaqt"
+}
+
+const timeLabels: { [key: string]: { [key: string]: string } } = {
+    days: {
+        ru: "День",
+        en: "Day",
+        uz: "Kun"
+    },
+    hours: {
+        ru: "Час",
+        en: "Hour",
+        uz: "Soat"
+    },
+    minutes: {
+        ru: "Минута",
+        en: "Minute",
+        uz: "Daqiqа"
+    },
+    seconds: {
+        ru: "Секунда",
+        en: "Second",
+        uz: "Soniya"
+    }
+};
+
+const Timer = ({ eventDate, month, dayOfWeek, language }: IProps) => {
     const [timeLeft, setTimeLeft] = useState<ITimeLeft | false>(false);
 
     useEffect(() => {
@@ -54,27 +84,27 @@ const Timer = ({ eventDate, month, dayOfWeek }: IProps) => {
     return (
         <>
             <div className="py-30 relative overflow-hidden">
-                <h2 className="text-[#c6754d] font-mono text-3xl text-center pb-15">Time left until the event</h2>
+                <h2 className="text-[#c6754d] font-mono text-3xl text-center pb-15">{timeLeftHeading[language]}</h2>
                 <div className="flex flex-row gap-15 justify-center">
                     <div className="flex flex-col items-center text-3xl gap-2">
                         <p className="text-4xl font-mono text-[#2b1105]">{timeLeft == false ? "00" : timeLeft.days >= 10 ? timeLeft.days : `0${timeLeft.days}`}</p>
                         <div className="w-full h-[1px] border-b border-b-[#2b1105] border-dotted"></div>
-                        <span className="text-[1.2rem] capitalize font-mono">days</span>
+                        <span className="text-[1.2rem] capitalize font-mono">{timeLabels.days[language]}</span>
                     </div>
                     <div className="flex flex-col items-center text-3xl gap-2">
                         <p className="text-4xl font-mono text-[#2b1105]">{timeLeft == false ? "00" : timeLeft.hours >= 10 ? timeLeft.hours : `0${timeLeft.hours}`}</p>
                         <div className="w-full h-[1px] border-b border-b-[#2b1105] border-dotted"></div>
-                        <span className="text-[1.2rem] capitalize font-mono">hours</span>
+                        <span className="text-[1.2rem] capitalize font-mono">{timeLabels.hours[language]}</span>
                     </div>
                     <div className="flex flex-col items-center text-3xl gap-2">
                         <p className="text-4xl font-mono text-[#2b1105]">{timeLeft == false ? "00" : timeLeft.minutes >= 10 ? timeLeft.minutes : `0${timeLeft.minutes}`}</p>
                         <div className="w-full h-[1px] border-b border-b-[#2b1105] border-dotted"></div>
-                        <span className="text-[1.2rem] capitalize font-mono">min</span>
+                        <span className="text-[1.2rem] capitalize font-mono">{timeLabels.minutes[language]}</span>
                     </div>
                     <div className="flex flex-col items-center text-3xl gap-2">
                         <p className="text-4xl font-mono text-[#2b1105]">{timeLeft == false ? "00" : timeLeft.seconds >= 10 ? timeLeft.seconds : `0${timeLeft.seconds}`}</p>
                         <div className="w-full h-[1px] border-b border-b-[#2b1105] border-dotted"></div>
-                        <span className="text-[1.2rem] capitalize font-mono">sec</span>
+                        <span className="text-[1.2rem] capitalize font-mono">{timeLabels.seconds[language]}</span>
                     </div>
                 </div>
                 <Image src={Flower} alt="" className="w-[50px] rotate-12 absolute bottom-0 -left-[10px] drop-shadow-[4px_4px_8px_rgba(0,0,0,0.5)]" />

@@ -29,11 +29,11 @@ const Home = async () => {
             <Header names={names} />
             <Intro names={names} date={date} language={language} />
             <main className="pt-13 pb-13">
-                <Letter names={names} text={textLetter} language={language} />
-                <Timer eventDate={eventDate} month={month} dayOfWeek={dayOfWeek} language={language} />
-                <Location link={LocationLink} language={language} />
+                <Letter names={names} text={textLetter}  language={language}/>
+                <Timer eventDate={eventDate} month={month} dayOfWeek={dayOfWeek}  language={language} />
+                <Location link={LocationLink}  language={language} />
             </main>
-            <Footer language={language} />
+            <Footer  language={language} />
         </>
     );
 }

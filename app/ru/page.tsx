@@ -12,16 +12,16 @@ export const metadata: Metadata = {
 };
 
 const Home = async () => {
-    const language = "en"
+    const language = "ru"
     const names = ["Caleb", "Amaya"]
-    const date = "July 15, 2026"
+    const date = "Июль 15, 2026"
     const eventDate = "2026-07-15T15:35:00"
-    const month = "July"
-    const dayOfWeek = "Monday"
+    const month = "Июль"
+    const dayOfWeek = "Понедельник"
     const LocationLink = "https://yandex.uz/maps/-/CLhHVB3G"
     const textLetter = [
-        "We are happy to invite you to a day that will mark the beginning of our family story.",
-        "On July 15, 2026, we will say “I do” to each other, and we would be delighted if you shared this exciting and joyful moment with us."
+        "Мы с радостью приглашаем вас на день, который станет началом истории нашей семьи.",
+        "Июля 15, 2026 мы скажем друг другу заветное «да» и будем очень рады, если вы разделите с нами этот волнующий и радостный момент."
     ]
 
     return (
@@ -29,7 +29,7 @@ const Home = async () => {
             <Header names={names} />
             <Intro names={names} date={date} language={language} />
             <main className="pt-13 pb-13">
-                <Letter names={names} text={textLetter} language={language} />
+                <Letter names={names} language={language} text={textLetter} />
                 <Timer eventDate={eventDate} month={month} dayOfWeek={dayOfWeek} language={language} />
                 <Location link={LocationLink} language={language} />
             </main>

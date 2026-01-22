@@ -12,18 +12,17 @@ export const metadata: Metadata = {
 };
 
 const Home = async () => {
-    const language = "en"
-    const names = ["Caleb", "Amaya"]
-    const date = "July 15, 2026"
-    const eventDate = "2026-07-15T15:35:00"
-    const month = "July"
-    const dayOfWeek = "Monday"
-    const LocationLink = "https://yandex.uz/maps/-/CLhHVB3G"
+    const language = "uz";
+    const names = ["Caleb", "Amaya"];
+    const date = "15 Iyul, 2026";
+    const eventDate = "2026-07-15T15:35:00";
+    const month = "Iyul";
+    const dayOfWeek = "Dushanba";
+    const LocationLink = "https://yandex.uz/maps/-/CLhHVB3G";
     const textLetter = [
-        "We are happy to invite you to a day that will mark the beginning of our family story.",
-        "On July 15, 2026, we will say “I do” to each other, and we would be delighted if you shared this exciting and joyful moment with us."
-    ]
-
+        "Biz sizni oilamiz tarixining boshlanishiga aylanuvchi kunga mamnuniyat bilan taklif qilamiz.",
+        "15 Iyul, 2026 kuni biz bir-birimizga “ha” deymiz va ushbu hayajonli hamda quvonchli onni biz bilan birga baham ko‘rsangiz, juda xursand bo‘lamiz."
+    ];
     return (
         <>
             <Header names={names} />

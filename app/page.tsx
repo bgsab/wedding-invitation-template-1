@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Intro from "@/components/Intro";
 import Letter from "@/components/Letter";
@@ -21,6 +22,7 @@ const Home = async () => {
                 <Timer eventDate={eventDate} month={month} dayOfWeek={dayOfWeek} />
                 <Location link={LocationLink} />
             </main>
+            <Footer />
         </>
     );
 }

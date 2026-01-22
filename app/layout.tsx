@@ -1,6 +1,11 @@
 import type { Metadata } from "next";
 import './main.css'
 
+export const metadata: Metadata = {
+    title: "Caleb And Amaya",
+    description: "Caleb And Amaya Wedding invitation",
+};
+
 export default function RootLayout({
     children,
 }: Readonly<{

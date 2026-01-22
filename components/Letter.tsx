@@ -18,7 +18,7 @@ const Letter = async ({ names, date, text }: IProps) => {
                     <Image src={Flower2} alt="" className="h-[100px] object-contain absolute top-0 right-[-40px] w-[100px] rotate-[-30deg] drop-shadow-[4px_4px_8px_rgba(0,0,0,0.5)]" />
                     <h3 className="pb-7 text-center text-3xl tracking-widest">Dear Guests</h3>
                     <p className="pb-2 tracking-wider text-2xl">We are happy to invite you to a day that will mark the beginning of our family story. <br/><br/> On {date}, we will say “I do” to each other, and we would be very pleased if you would share this exciting and joyful moment with us.</p>
-                    <p className="mx-auto text-center pt-7 text-3xl tracking-widest">{`${names[0][0]}  &  ${names[1][0]}`}</p>
+                    <p className="mx-auto text-center pt-7 text-3xl">{`${names[0][0]}  &  ${names[1][0]}`}</p>
                     <Image src={Flower3} alt="" className="drop-shadow-[4px_4px_8px_rgba(0,0,0,0.5)] h-[70px] sm:h-[100px] object-contain z-0 absolute bottom-[-20px] sm:bottom-[-50px] left-[-30px] sm:left-[-10px] w-[100px] rotate-[30deg]" />
                 </div>
             </div>

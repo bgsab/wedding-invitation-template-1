@@ -26,7 +26,7 @@ const Music = () => {
     }
 
     return (
-        <div className="pt-4 text-[#2b1105] max-w-[400px] w-full mx-auto">
+        <div className="pt-4 text-[#2b1105] max-w-[300px] w-full mx-auto">
             <p className="text-center font-mono">Golden Brown X Love Story</p>
             <div className="h-1 w-full rounded border border-black mt-3">
                 <div

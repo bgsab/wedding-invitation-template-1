@@ -107,8 +107,8 @@ const Timer = ({ eventDate, month, dayOfWeek, language }: IProps) => {
                         <span className="text-[1.2rem] capitalize font-mono">{timeLabels.seconds[language]}</span>
                     </div>
                 </div>
-                <Image src={Flower} alt="" className="w-[50px] rotate-12 absolute bottom-0 -left-[10px] drop-shadow-[4px_4px_8px_rgba(0,0,0,0.5)]" />
-                <Image src={Flower2} alt="" className="w-[50px] -rotate-30 absolute bottom-1/2 -right-[10px] drop-shadow-[4px_4px_8px_rgba(0,0,0,0.5)]" />
+                <Image data-aos="fade-right" src={Flower} alt="" className="w-[50px] rotate-12 absolute bottom-0 -left-[10px] drop-shadow-[4px_4px_8px_rgba(0,0,0,0.5)]" />
+                <Image data-aos="fade-left" src={Flower2} alt="" className="w-[50px] -rotate-30 absolute bottom-1/2 -right-[10px] drop-shadow-[4px_4px_8px_rgba(0,0,0,0.5)]" />
                 <div className="pt-25 flex flex-col gap-10 items-stretch px-[20px]">
                     <div className="self-start">
                         {dayOfWeek.split("").map((letter, i) => (

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import './main.css'
+import AOSProvider from "@/components/AOSProvider";
 
 export const metadata: Metadata = {
     title: "Caleb And Amaya",
@@ -15,7 +16,9 @@ export default function RootLayout({
         <html lang="en" className="text-[12px] sm:text-[16px]">
             <body className="bg-black">
                 <div className="container">
-                    {children}
+                    <AOSProvider>
+                        {children}
+                    </AOSProvider>
                 </div>
             </body>
         </html>

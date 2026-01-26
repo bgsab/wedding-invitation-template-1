@@ -1,6 +1,6 @@
 import Image from "next/image"
 import IntroImg from "../public/images/intro.jpg"
-
+import Music from "./Music"
 interface IProps {
     names: string[],
     date: string,
@@ -16,7 +16,7 @@ const welcome: { [key: string]: string } = {
 const Intro = async ({ names, date, language }: IProps) => {
     return (
         <>
-            <div className="pt-11">
+            <div className="pt-11" data-aos="fade-up">
                 <div className="flex flex-col">
                     <div className="flex flex-col gap-4">
                         <p className="text-[#2b1105] text-2xl text-center tracking-wider">{welcome[language]}</p>
@@ -27,7 +27,8 @@ const Intro = async ({ names, date, language }: IProps) => {
                         </div>
                         <p className="text-[#2b1105] text-2xl text-center tracking-wider">{date}</p>
                     </div>
-                    <Image src={IntroImg} alt="" className="     w-full object-cover" />
+                    <Music />
+                    <Image src={IntroImg} alt="" className="w-full object-cover" />
                 </div>
             </div>
         </>

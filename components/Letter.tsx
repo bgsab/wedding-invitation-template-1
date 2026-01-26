@@ -17,10 +17,10 @@ const letterHeading: { [key: string]: string } = {
 
 const Letter = async ({ names, text, language }: IProps) => {
     return (
-        <div className="px-[15px]">
+        <div className="px-[15px]"data-aos="fade-up">
             <div className="relative max-w-[480px] mx-auto">
                 <Image src={LetteImg} alt="" className="w-full h-full scale-[1.03] absolute top-0 bottom-0 left-0 right-0 virez" />
-                <div className="relative transform-[translateY(40px)] bg-[#ebeadd] text-[#2b1105] rounded-[4px] overflow-hidden mx-auto text-[15px] py-10 px-5 sm:px-15 text-justify w-full">
+                <div className="relative transform-[translateY(40px)] bg-[#ebeadd] text-[#2b1105] rounded-[4px] overflow-hidden mx-auto text-[15px] py-10 px-5 sm:px-7 text-justify w-full">
                     <Image src={Flower2} alt="" className="h-[100px] object-contain absolute top-0 right-[-40px] w-[100px] rotate-[-30deg] drop-shadow-[4px_4px_8px_rgba(0,0,0,0.5)]" />
                     <h3 className="pb-7 text-center text-3xl tracking-widest">{letterHeading[language]}</h3>
                     <p className="pb-2 tracking-wider text-2xl">

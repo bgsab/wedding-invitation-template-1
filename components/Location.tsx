@@ -29,7 +29,7 @@ const Location = async ({ link, language }: IProps) => {
         <div className="pt-5 px-[15px]">
             <h2 className="mx-auto w-max font-mono text-[#c6754d] text-3xl pb-3">{locationLabel[language]}</h2>
             <div className="text-[#2b1105] font-mono max-w-[250px] mx-auto text-center pb-3">{locationDescription[language]}</div>
-            <Image src={Place} alt="" className="pb-3"/>
+            <Image src={Place} alt="" className="pb-3 align-middle"/>
             <a className="bg-[#c6754d] mx-auto w-max text-white font-mono py-2 px-3 block" href={link}>{openMapLabel[language]}</a>
         </div>
     )

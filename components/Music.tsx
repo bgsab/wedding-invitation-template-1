@@ -1,7 +1,6 @@
 "use client"
-
+import Image from 'next/image'
 import { useRef, useState } from 'react'
-
 const Music = () => {
     const audioRef = useRef<HTMLAudioElement>(null)
     const [isPlaying, setIsPlaying] = useState(false)
@@ -26,11 +25,11 @@ const Music = () => {
     }
 
     return (
-        <div className="pt-4 text-[#2b1105] max-w-[300px] w-full mx-auto">
+        <div className="pt-4 text-black max-w-[300px] w-full mx-auto">
             <p className="text-center font-mono">Golden Brown X Love Story</p>
             <div className="h-1 w-full rounded border border-black mt-3">
                 <div
-                    className="h-full rounded bg-[#2b1105] transition-all"
+                    className="h-full rounded bg-black transition-all"
                     style={{ width: `${progress}%` }}
                 />
             </div>
@@ -38,7 +37,11 @@ const Music = () => {
                 onClick={togglePlay}
                 className="px-5 py-3 text-center block w-max mx-auto"
             >
-                {isPlaying ? '⏸' : '▶'}
+                {isPlaying ?
+                    <Image src="/images/pause.svg" width={20} height={20} alt=""/>
+                    :
+                    <Image src="/images/play.svg" width={20} height={20} alt=""/>
+                }
             </button>
             <audio
                 ref={audioRef}

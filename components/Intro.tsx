@@ -16,7 +16,7 @@ const welcome: { [key: string]: string } = {
 const Intro = async ({ names, date, language }: IProps) => {
     return (
         <>
-            <div className="pt-11" data-aos="fade-up">
+            <div className="pt-11">
                 <div className="flex flex-col">
                     <div className="flex flex-col gap-4">
                         <p className="text-[#2b1105] text-2xl text-center tracking-wider">{welcome[language]}</p>

@@ -6,6 +6,10 @@
     --font-greatvibes: "GreatVibes", sans-serif;
 }
 
+:root {
+    --swiper-theme-color: rgb(207, 207, 207) !important;
+}
+
 body {
     font-family: GreatVibes;
 }
@@ -17,3 +21,10 @@ body {
     background: white;
     min-height: 100vh;
 }
+
+.swiper-pagination {
+    padding: 5px 0;
+    background: rgba(15, 15, 15, 0.378);
+    border-radius: 20;
+}
+
